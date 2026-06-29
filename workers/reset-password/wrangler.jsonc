@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "rca-connect-reset-password",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-29",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "vars": {
+    "ALLOWED_ORIGIN": "http://localhost:5173",
+    "FIREBASE_PROJECT_ID": "smart-student-13ce6",
+    "FIREBASE_API_KEY": "AIzaSyCAdb0d0Hx3o5iUqzNmsobYKpqN_83xNXM",
+    "GMAIL_USER": "mugishaivanbright250@gmail.com"
+  },
+
+  "env": {
+    "production": {
+      "vars": {
+        "ALLOWED_ORIGIN": "https://rcavillage.pages.dev",
+        "FIREBASE_PROJECT_ID": "smart-student-13ce6",
+        "FIREBASE_API_KEY": "AIzaSyCAdb0d0Hx3o5iUqzNmsobYKpqN_83xNXM",
+        "GMAIL_USER": "mugishaivanbright250@gmail.com"
+      }
+    }
+  }
+}

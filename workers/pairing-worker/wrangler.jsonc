@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "rca-connect-pairing",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-29",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "triggers": {
+    "crons": ["0 0 * * 1"]
+  },
+
+  "vars": {
+    "FIREBASE_PROJECT_ID": "smart-student-13ce6"
+  }
+}
